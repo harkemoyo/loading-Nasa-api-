@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <title>Animation Custom</title>
+</head>
+<body>
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="rocket loading">
+    </div>
+    <!-- container -->
+    <div class="container">
+        <!-- nav container -->
+        <div class="nav-container">
+            <span class="background"></span>
+            <!-- result-nav -->
+            <span class="nav-items" id="resultNav">
+                <h3 class="clickable" onclick="updateDom('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()" >Load More</h3>
+            </span>
+        <!-- favorite nav -->
+        <span class="nav-items hidden" id="favoriteNav">
+            <h3 class="clickable" onclick="getNasaPictures()">Load more NASA Images</h3>
+        </span>
+        </div>
+        <!-- img container -->
+        <div class="img-container">
+           
+        </div>
+    </div>
+    <!-- save confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+    <!-- script.js  -->
+    <script src="main.js"></script>
+</body>
+</html>
